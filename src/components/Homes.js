@@ -52,13 +52,6 @@ class Homes extends React.Component{
                        ))}  
                 </tbody>
             </table>    
-            // <ul>
-            // {items.map(item => (
-            //     <li key={item.name}>
-            //      {item.lastName} {item.contact} {item.email}
-            //     </li>
-            // ))}
-            // </ul> 
             )
         }
         
