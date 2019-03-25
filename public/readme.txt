@@ -1,0 +1,1 @@
+1. Install or setup react project : npx install create-react-app contacts-react.
