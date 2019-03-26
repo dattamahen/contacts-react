@@ -3,6 +3,7 @@ import './css/Home.css';
 
 class Homes extends React.Component{
     constructor(props){
+        debugger
         super(props);
         this.state={
             "error" : null,
@@ -11,9 +12,10 @@ class Homes extends React.Component{
         }
     }
     componentDidMount(){
-        fetch("https://api.myjson.com/bins/9z9ja")
-            .then(res=>res.json())
+        fetch("http://localhost:1234/allcontacts") 
+            .then(res=>res.json()) 
             .then((result)=>{
+                debugger
                 this.setState({
                     isLoaded:true,
                     items:result
@@ -42,7 +44,7 @@ class Homes extends React.Component{
                     <th>Email</th>
                 </thead>
                 <tbody> 
-                       {items.map(item=>(
+                       {items.map(item=>( 
                            <tr key={item.name}>
                                 <td>{item.name}</td>
                                 <td>{item.lastName}</td>
