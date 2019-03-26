@@ -11,7 +11,7 @@ class Homes extends React.Component{
         }
     }
     componentDidMount(){
-        fetch("https://api.myjson.com/bins/nwldi")
+        fetch("https://api.myjson.com/bins/9z9ja")
             .then(res=>res.json())
             .then((result)=>{
                 this.setState({
